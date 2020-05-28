@@ -1,28 +1,26 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <title-heading></title-heading>
+    <palindrome-checker></palindrome-checker>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TitleHeading from "./components/TitleHeading.vue";
+import PalindromeChecker from "./components/PalindromeChecker.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    TitleHeading,
+    PalindromeChecker
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  padding: 150px;
+  border: 2px solid aliceblue;
+  border-radius: 15px;
+  margin-top: 12.5%;
 }
 </style>
